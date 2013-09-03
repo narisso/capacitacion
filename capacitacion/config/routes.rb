@@ -1,4 +1,6 @@
 Capacitacion::Application.routes.draw do
+
+  match 'boards' => 'board#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
