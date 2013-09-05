@@ -1,6 +1,6 @@
 <h1>Profiles#show_user</h1>
 <p>Find me in app/views/profiles/show_user.html.erb</p>
-<%= user.name %>
+
 
 <title>Información Usuario</title>
 
@@ -11,8 +11,8 @@
 <td>Last name</td>
 </tr>
 <tr>
-<td><%= user.user %></td>
-<td><%= user.name %></td>
-<td><%= user.last_name %></td>
+<td><%= @user.user.username %></td>
+<td><%= @user.name %></td>
+<td><%= @user.last_name %></td>
 </tr>
 </table>
