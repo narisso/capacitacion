@@ -2,6 +2,7 @@ Capacitacion::Application.routes.draw do
 
   get "profiles" => 'profiles#index'
   get "profiles/:id" => 'profiles#show_user' ##:as => 'show_profile' # se crea metodo show_profile_path(user)
+  
 
   #get "profiles_controller/show_user"
 
