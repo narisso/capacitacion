@@ -6,6 +6,7 @@ Capacitacion::Application.routes.draw do
   #get "profiles_controller/show_user"
 
   #get "profile_controller/show_user"
+  resources :boards
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
