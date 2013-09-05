@@ -1,6 +1,15 @@
 Capacitacion::Application.routes.draw do
 
+  get "profiles" => 'profiles#index'
+  get "profiles/:id" => 'profiles#show_user', :as => 'show_profile' # se crea metodo show_profile_path(user)
+
+  #get "profiles_controller/show_user"
+
+  #get "profile_controller/show_user"
+
   match 'boards' => 'board#index'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
