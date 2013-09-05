@@ -1,7 +1,7 @@
 class BoardsController < ApplicationController
 
 	def show
-		@boards = board.all
+		@boards = Board.all
 	end
 
 	def index
