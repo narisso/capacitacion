@@ -1,6 +1,7 @@
 Capacitacion::Application.routes.draw do
 
   match 'boards' => 'board#index'
+  match 'task' => 'api_tasks#getTasks'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
