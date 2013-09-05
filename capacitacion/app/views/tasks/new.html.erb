@@ -1,0 +1,14 @@
+<h1>Tasks#show</h1>
+<p>Find me in app/views/tasks/show.html.erb</p>
+
+<%= form_for 'task', :url => tasks_path do |f| %>
+	<div class="field">
+		<%= f.label 'name' %>
+		<%= f.text_field 'name' %>
+	</div>
+	<div class="field">
+		<%= f.label 'description' %>
+		<%= f.text_field 'description' %>
+	</div>
+	<%= f.submit 'Crear Task' %>
+<% end %>

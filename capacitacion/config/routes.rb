@@ -1,11 +1,26 @@
 Capacitacion::Application.routes.draw do
 
+  get "columns/index"
+
+  get "tasks/index"
+
+  get "tasks/show"
+
+  get "tasks/edit"
+
+  get "tasks/update"
+
+ # match 'task/new' => 'task#new', :as => 'new_task'
+
   resources :boards
 
   root :to => 'Users#index'
   resources :users
+
+  resources :tasks
   
   match 'boards' => 'board#index'
+  match 'tasks' => 'task#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

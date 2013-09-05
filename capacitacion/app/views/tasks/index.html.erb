@@ -1,0 +1,17 @@
+<h1>Lista de tasks</h1>
+
+<table>
+  <tr>
+    <th>Task</th>
+    <th>Description</th>
+  </tr>
+ 
+  <% @tasks.each do |task| %>
+    <tr>
+      <td><%= task.name %></td>
+      <td><%= task.description %></td>
+    </tr>
+  <% end %>
+  <%= link_to 'Agregar Task', new_task_path %>
+
+</table>
