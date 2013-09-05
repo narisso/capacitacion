@@ -1,2 +1,8 @@
-<h1>Users#index</h1>
-<p>Find me in app/views/users/index.html.erb</p>
+<h1>Login</h1>
+<%= form_for User.new do |f| %>
+	<%= f.label "Nombre de usuario" %>
+	<%= f.text_field :username %> <br>
+	<%= f.label "Contraseña" %>
+	<%= f.password_field :password %><br>
+	<%= f.submit "Login" %>
+<% end %>

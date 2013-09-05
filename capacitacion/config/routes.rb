@@ -1,6 +1,7 @@
 Capacitacion::Application.routes.draw do
-  root :to => 'Users#index'
+  root :to => 'Users#signup'
   resources :users
+  match 'signup' => 'users#signup'
   
   match 'boards' => 'board#index'
   # The priority is based upon order of creation:

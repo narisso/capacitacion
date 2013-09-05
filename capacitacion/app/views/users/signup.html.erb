@@ -1,0 +1,11 @@
+<%= if flash[:notice] then flash[:notice] end %>
+<h1>Crear Cuenta</h1>
+<%= form_for User.new do |f| %>
+	<%= f.label "Nombre de usuario" %>
+	<%= f.text_field :username, :size => 20 %> <br>
+	<%= f.label "Contraseña" %>
+	<%= f.password_field :password, :input_html => {:style => 'width: 40px'} %><br>
+	<%= f.label "Repetir Contraseña" %>
+	<%= f.password_field :password2, :input_html => {:style => 'width: 40px'} %><br>
+	<%= f.submit %>
+<% end %>
